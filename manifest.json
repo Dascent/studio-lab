@@ -1,0 +1,26 @@
+{
+  "name": "studio-lab",
+  "version": "1.0.0",
+  "description": "Orchestration hub for AI agents and modular web apps.",
+  "author": "Dascent",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dascent/studio-lab"
+  },
+  "architecture": {
+    "logic_layer": "/logic",
+    "application_layer": "/apps",
+    "ui_layer": "/assets"
+  },
+  "technologies": [
+    "Vanilla JS",
+    "CSS3",
+    "HTML5",
+    "Shapes.inc Framework"
+  ],
+  "ai_instructions": {
+    "parsing_priority": "logic-first",
+    "style_guide": "minimalist, dependency-free",
+    "context": "Successor to vault repo with improved modularity"
+  }
+}
