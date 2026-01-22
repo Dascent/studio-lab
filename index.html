@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Studio Lab | Dascent</title>
+<style>
+body{margin:0;font-family:sans-serif;background:#0f172a;color:#f8fafc;line-height:1.6;overflow-x:hidden}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 5%;background:rgba(15,23,42,0.9);position:sticky;top:0;z-index:100;border-bottom:1px solid #1e293b}
+.logo{font-size:1.5rem;font-weight:700;letter-spacing:-1px;color:#38bdf8}
+.nav-links{display:flex;gap:2rem}
+.nav-links a{color:#94a3b8;text-decoration:none;font-size:0.9rem;transition:0.3s}
+.nav-links a:hover{color:#38bdf8}
+header{padding:8rem 5%;text-align:center;background:radial-gradient(circle at top right,#1e293b,transparent),radial-gradient(circle at bottom left,#0f172a,transparent)}
+h1{font-size:3.5rem;margin:0;background:linear-gradient(90deg,#38bdf8,#818cf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.subtitle{font-size:1.2rem;color:#94a3b8;max-width:700px;margin:1.5rem auto}
+section{padding:5rem 5%}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin-top:3rem}
+.card{background:#1e293b;padding:2rem;border-radius:12px;border:1px solid #334155;transition:transform 0.3s}
+.card:hover{transform:translateY(-5px);border-color:#38bdf8}
+.tag{display:inline-block;padding:0.25rem 0.75rem;background:#0ea5e9;color:#fff;font-size:0.7rem;border-radius:20px;margin-bottom:1rem;text-transform:uppercase}
+h2{font-size:2.2rem;text-align:center}
+.about-box{background:linear-gradient(135deg,#1e293b,#0f172a);padding:3rem;border-radius:20px;border:1px solid #334155;max-width:900px;margin:0 auto}
+footer{text-align:center;padding:3rem;border-top:1px solid #1e293b;color:#64748b;font-size:0.8rem}
+.btn{display:inline-block;margin-top:2rem;padding:0.8rem 2rem;background:#38bdf8;color:#0f172a;text-decoration:none;border-radius:6px;font-weight:600}
+@media(max-width:768px){h1{font-size:2.5rem}nav{display:flex;flex-direction:column;align-items:center;}}
+</style>
+</head>
+<body>
+<nav>
+<div class="logo">STUDIO-LAB</div>
+<div class="nav-links">
+<a href="#agents">Agents</a>
+<a href="#apps">Web Apps</a>
+<a href="#about">Designer</a>
+</div>
+</nav>
+<header>
+<div class="tag">GitHub Repository</div>
+<h1>Intelligence Orchestration</h1>
+<p class="subtitle">A centralized framework for AI agent logic, modular web applications, and structural prompts. Evolution of the Vault, optimized for clarity and deployment.</p>
+<a href="https://github.com/Dascent/studio-lab" class="btn" id="repoLink">Explore Repository</a>
+</header>
+<section id="agents">
+<h2>AI Agent Gallery</h2>
+<div class="grid">
+<div class="card">
+<div class="tag">Shapes.inc</div>
+<h3>Logic Controller</h3>
+<p>Advanced agent structures utilizing the Shapes.inc framework for persistent memory and role-play accuracy.</p>
+</div>
+<div class="card">
+<div class="tag">Shapes.inc</div>
+<h3>Persona Engine</h3>
+<p>Modular personality frameworks that adapt to user interaction patterns and linguistic nuances.</p>
+</div>
+<div class="card">
+<div class="tag">Shapes.inc</div>
+<h3>Task Automator</h3>
+<p>Agents designed to bridge the gap between creative prompt engineering and functional task execution.</p>
+</div>
+</div>
+</section>
+<section id="apps" style="background:#0b1120">
+<h2>Web Applications</h2>
+<div class="grid">
+<div class="card">
+<h3>Vanilla JS Tools</h3>
+<p>Lightweight, high-performance web utilities built without heavy dependencies for maximum speed.</p>
+</div>
+<div class="card">
+<h3>Interactive Interfaces</h3>
+<p>Responsive, single-page applications focused on intuitive UI and seamless UX patterns.</p>
+</div>
+<div class="card">
+<h3>API Integrations</h3>
+<p>Front-end implementations designed to interact with modern AI model endpoints and data streams.</p>
+</div>
+</div>
+</section>
+<section id="about">
+<div class="about-box">
+<h2>The Designer</h2>
+<p>I am a developer and designer focused on the intersection of human-centric interfaces and artificial intelligence. My work centers on creating logic-driven repositories that serve as bridges between conceptual AI and functional web deployment.</p>
+</div>
+</section>
+<footer>
+&copy; 2026 Dascent | Studio-Lab Framework
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+const cards=document.querySelectorAll('.card');
+const observerOptions={threshold:0.1};
+const observer=new IntersectionObserver(function(entries){
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.style.opacity='1';
+entry.target.style.transform='translateY(0)';
+}
+});
+},observerOptions);
+cards.forEach(card=>{
+card.style.opacity='0';
+card.style.transform='translateY(20px)';
+card.style.transition='all 0.6s ease-out';
+observer.observe(card);
+});
+document.getElementById('repoLink').addEventListener('click',function(e){
+console.log('Navigating to GitHub...');
+});
+});
+</script>
+</body>
+</html>
