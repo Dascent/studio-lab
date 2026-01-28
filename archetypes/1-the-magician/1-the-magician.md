@@ -1,10 +1,7 @@
 # The Magician I
 
-## Name  
-The Magician I
-
 ## Image  
-![the magician](https://wiki.dascent-sigils.com/index.php/File:Major-Arcana-1.jpg)
+<img src="https://raw.githubusercontent.com/Dascent/studio-lab/refs/heads/main/archetypes/1-the-magician/images/1.png" width="300" height="300"/>
 
 ## Caption  
 **The Magician I** resourceful
@@ -15,14 +12,15 @@ Willpower, resourcefulness, skill, manifestation, action, focus, confidence.
 ## Shadow  
 Trickery, manipulation, illusion, lack of groundedness, using power for selfish gain, insecurity masked by arrogance.
 
-## Astro  
-Mercury ☿
+## Astrological  
+* Mercury ☿
 
 ## Sign  
-Gemini ♊ and Virgo ♍
+* Gemini ♊
+* Virgo ♍
 
 ## Element  
-Air 🜁
+* Air 🜁
 
 ## Info  
 The corresponding planet, Mercury ☿, the element associated with this archetype is Air 🜁.  
@@ -45,4 +43,4 @@ Has all the tools and resources necessary to achieve our goals.
  
 It is time to remember to use skills and knowledge to direct our lives in the direction we prefer.
 
-## Abstract thinking, emotional flexibility, stability, light, action, magic.  
+**Abstract thinking, emotional flexibility, stability, light, action, magic.**  
